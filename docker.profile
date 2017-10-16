@@ -18,10 +18,10 @@ function docker_rename() {
 alias docker-rename=docker_rename
 
 # delete all images
-alias docker-rmi='docker rmi $(docker images -q)'
+alias docker-rmi='docker rmi -f $(docker images -q)'
 
 # delete all images for <none> only
-alias docker-rmi-none='docker rmi $(docker images -f "dangling=true" -q)'
+alias docker-rmi-none='docker rmi -f $(docker images -f "dangling=true" -q)'
 
 # add variable DOCKER_ID with UID of most recent container
 alias docker-id='export DOCKER_ID=`docker ps -ql` && echo $DOCKER_ID'
