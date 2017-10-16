@@ -23,10 +23,14 @@ alias gc="gcloud"
 alias gcc="gcloud compute"
 alias gcclist="gcloud compute instances list"
 
-# The next line updates PATH for the Google Cloud SDK.
-source $HOME/google-cloud-sdk/path.bash.inc
-
-# The next line enables shell command completion for gcloud.
-source $HOME/google-cloud-sdk/completion.bash.inc
-
-source $HOME/dotfiles/docker.profile
+if [ -e $HOME/google-cloud-sdk/path.bash.inc ]; then
+  # The next line updates PATH for the Google Cloud SDK.
+  source $HOME/google-cloud-sdk/path.bash.inc
+fi
+if [ -e $HOME/google-cloud-sdk/completion.bash.inc ]; then
+  # The next line enables shell command completion for gcloud.
+  source $HOME/google-cloud-sdk/completion.bash.inc
+fi
+if [ -e $HOME/dotfiles/docker.profile ]; then
+  source $HOME/dotfiles/docker.profile
+fi
