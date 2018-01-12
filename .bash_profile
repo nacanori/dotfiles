@@ -18,6 +18,9 @@ alias docker='sudo docker'
 alias y='yarn'
 alias c='clear'
 
+# peco
+alias  hp='eval $(history | cut -c 8-|peco)'
+
 # gcloud
 alias gcloud="sudo gcloud"
 alias gc="gcloud"
