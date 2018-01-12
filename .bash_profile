@@ -19,6 +19,7 @@ alias y='yarn'
 alias c='clear'
 
 # gcloud
+alias gcloud="sudo gcloud"
 alias gc="gcloud"
 alias gcc="gcloud compute"
 alias gcclist="gcloud compute instances list"
