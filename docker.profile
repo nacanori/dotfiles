@@ -1,5 +1,5 @@
 # delete all containers
-alias docker-rm='docker rm $(docker ps -a -q)'
+alias docker-rm='docker rm -f $(docker ps -a -q)'
 
 # login with bash container
 alias docker-login='docker exec -it $1 bash'                               # 
