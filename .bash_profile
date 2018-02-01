@@ -15,6 +15,7 @@ alias sudo='sudo '
 alias g='git'
 alias d='sudo docker'
 alias docker='sudo docker'
+alias dc='docker-compose'
 alias y='yarn'
 alias c='clear'
 
