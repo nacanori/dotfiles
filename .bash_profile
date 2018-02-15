@@ -18,6 +18,8 @@ alias docker='sudo docker'
 alias dc='docker-compose'
 alias y='yarn'
 alias c='clear'
+alias tensorflow='source ~/tensorflow/bin/activate'
+alias rm='rmtrash'
 
 # peco
 alias  hp='eval $(history | cut -c 8-|peco)'
